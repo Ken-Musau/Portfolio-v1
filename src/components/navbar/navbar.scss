@@ -10,8 +10,12 @@
     justify-content: space-between;
     align-items: center;
 
-    span {
-      font-weight: bold;
+    .logo {
+      //   font-weight: bold;
+
+      font-size: 1.2em; /* Adjust the font size as needed */
+      font-weight: bold; /* Optionally, make the text bold */
+      color: #ffffff; /* Set the color of the text */
     }
 
     .socials {
@@ -19,10 +23,7 @@
       gap: 20px;
       align-items: center;
 
-      img {
-        height: 18px;
-        width: 18px;
-      }
+      
     }
   }
 }

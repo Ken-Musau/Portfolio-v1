@@ -5,23 +5,15 @@ function Navbar() {
     <div className="navbar">
       {/* sidebar */}
       <div className="wrapper">
-        <span>KenMusau</span>
+        <span className="logo">&lt; KenMusau /&gt;</span>
         <div className="socials">
-          <a href="#">
-            <img src="/facebook.png" alt="" />
-          </a>
+          <a href="#">Home</a>
 
-          <a href="#">
-            <img src="/instagram.png" alt="" />
-          </a>
+          <a href="#">About</a>
 
-          <a href="#">
-            <img src="/youtube.png" alt="" />
-          </a>
+          <a href="#">Portfolio</a>
 
-          <a href="#">
-            <img src="/dribbble.png" alt="" />
-          </a>
+          <a href="#">Contact</a>
         </div>
       </div>
     </div>
