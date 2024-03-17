@@ -1,8 +1,16 @@
+import "./app.scss";
+
 const App = () => {
   return (
     <div>
-      Hello World Welcome to 2024
-      <h1>Kennedy Musau Mutunga</h1>
+      <section>Hero</section>
+      <section>Parallx</section>
+      <section>Services</section>
+      <section>Projects</section>
+      <section>Portfolio</section>
+      <section>Portfolio2</section>
+      <section>Portfolio3</section>
+      <section>Contacts</section>
     </div>
   );
 };
