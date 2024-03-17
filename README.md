@@ -1,4 +1,4 @@
-# Kennedy Musau - Front-End Developer
+# Kennedy Musau - Software Developer
 
 Contact: kennedy.musauu@gmail.com | +254 (799) 030 009  
 Location: Kenya  
