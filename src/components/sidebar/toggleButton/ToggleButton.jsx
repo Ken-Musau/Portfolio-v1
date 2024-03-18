@@ -1,5 +1,5 @@
 function ToggleButton() {
-  return <div>ToggleButton</div>;
+  return <button>Button</button>;
 }
 
 export default ToggleButton;
