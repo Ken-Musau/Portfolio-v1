@@ -1,3 +1,4 @@
+import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
 
 import { motion } from "framer-motion";
@@ -5,7 +6,7 @@ import { motion } from "framer-motion";
 function Navbar() {
   return (
     <div className="navbar">
-      {/* sidebar */}
+      <Sidebar />
       <div className="wrapper">
         <motion.span
           className="logo"
