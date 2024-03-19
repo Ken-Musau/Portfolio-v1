@@ -1,9 +1,11 @@
 import Sidebar from "../sidebar/Sidebar";
+import Links from "../sidebar/links/Links";
 import "./navbar.scss";
 
 import { motion } from "framer-motion";
 
 function Navbar() {
+  const links = ["Home", "Services", "Portfolio", "About", "Contacts"];
   return (
     <div className="navbar">
       <Sidebar />
@@ -17,14 +19,15 @@ function Navbar() {
           KenMusau
         </motion.span>
 
-        <div className="socials">
-          <a href="#">Home</a>
-
-          <a href="#">About</a>
-
-          <a href="#">Portfolio</a>
-
-          <a href="#">Contact</a>
+        <div
+        // className="socials"
+        >
+          <Links classStyle="socials" />
+          {/* {links.map((link) => (
+            <a href={`#${link}`} key={link}>
+              {link}
+            </a>
+          ))} */}
         </div>
       </div>
     </div>

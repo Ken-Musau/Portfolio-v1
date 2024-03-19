@@ -1,6 +1,15 @@
 import "../sidebar.scss";
-function links() {
-  return <div className="links">links</div>;
+function Links({ classStyle = "links" }) {
+  const links = ["Home", "Services", "Portfolio", "About", "Contacts"];
+  return (
+    <div className={classStyle}>
+      {links.map((item) => (
+        <a href={`#${item}`} key={item}>
+          {item}
+        </a>
+      ))}
+    </div>
+  );
 }
 
-export default links;
+export default Links;
