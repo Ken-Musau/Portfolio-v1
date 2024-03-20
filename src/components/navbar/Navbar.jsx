@@ -5,7 +5,7 @@ import "./navbar.scss";
 import { motion } from "framer-motion";
 
 function Navbar() {
-  const links = ["Home", "Services", "Portfolio", "About", "Contacts"];
+  // const links = ["Home", "Services", "Portfolio", "About", "Contacts"];
   return (
     <div className="navbar">
       <Sidebar />
