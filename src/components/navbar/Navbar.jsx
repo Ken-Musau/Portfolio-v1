@@ -5,7 +5,6 @@ import "./navbar.scss";
 import { motion } from "framer-motion";
 
 function Navbar() {
-  // const links = ["Home", "Services", "Portfolio", "About", "Contacts"];
   return (
     <div className="navbar">
       <Sidebar />
@@ -19,15 +18,8 @@ function Navbar() {
           KenMusau
         </motion.span>
 
-        <div
-        // className="socials"
-        >
+        <div>
           <Links classStyle="socials" />
-          {/* {links.map((link) => (
-            <a href={`#${link}`} key={link}>
-              {link}
-            </a>
-          ))} */}
         </div>
       </div>
     </div>

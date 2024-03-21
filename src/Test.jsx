@@ -1,15 +1,14 @@
 import { motion } from "framer-motion";
 
+const variants = {
+  visible: {
+    opacity: 1,
+    x: 100,
+    transition: { staggerChildren: 0.2 },
+  },
+  hidden: { opacity: 0 },
+};
 function Test() {
-  const variants = {
-    visible: {
-      opacity: 1,
-      x: 100,
-      transition: { staggerChildren: 0.2 },
-    },
-    hidden: { opacity: 0 },
-  };
-
   const items = ["item1", "item2", "item3", "item4", "item5"];
   return (
     <div className="course">

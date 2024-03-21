@@ -19,6 +19,7 @@ function ToggleButton({ setOpen }) {
           strokeWidth="3"
           stroke="black"
           strokeLinecap="round"
+          d="M 2 9.423 L 20 9.423"
           variants={{ closed: { opacity: 1 }, open: { opacity: 0 } }}
         />
         <motion.path
