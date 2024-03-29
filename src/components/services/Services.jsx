@@ -4,23 +4,44 @@ import { FaLaptopCode } from "react-icons/fa";
 import { BsDatabaseCheck } from "react-icons/bs";
 import { GrVmMaintenance } from "react-icons/gr";
 
+const variants = {
+  initial: {
+    y: 500,
+    opacity: 0,
+  },
+  animate: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 function Services() {
   return (
-    <motion.div className="services">
-      <motion.div className="textContainer">
+    <motion.div
+      className="services"
+      variants={variants}
+      initial="initial"
+      // animate="animate"
+      whileInView="animate"
+    >
+      <motion.div className="textContainer" variants={variants}>
         <p>
           I Craft Innovative Solutions
           <br /> One tag at a Time
         </p>
         <hr />
       </motion.div>
-      <motion.div className="titleContainer">
+      <motion.div className="titleContainer" variants={variants}>
         <div className="title">
           <h1>Building Modern Innovative Solutions</h1>
         </div>
       </motion.div>
-      <motion.div className="listContainer">
-        <div className="box">
+      <motion.div className="listContainer" variants={variants}>
+        <motion.div className="box">
           <FaLaptopCode className="icon" />
           <h2>FrontEnd Development</h2>
           <p>
@@ -29,9 +50,9 @@ function Services() {
             performance optimization, I deliver websites that excel across all
             devices and browsers. Let's turn your vision into reality!
           </p>
-        </div>
+        </motion.div>
 
-        <div className="box">
+        <motion.div className="box">
           <BsDatabaseCheck className="icon" />
           <h2>Backend Development</h2>
           <p>
@@ -41,9 +62,9 @@ function Services() {
             every project. Let's turn your ideas into powerful backend
             solutions!
           </p>
-        </div>
+        </motion.div>
 
-        <div className="box">
+        <motion.div className="box">
           <GrVmMaintenance className="icon" />
           <h2>Maintenance and Support</h2>
           <p>
@@ -53,7 +74,7 @@ function Services() {
             maintaining your website. Let's collaborate to ensure your website
             stays at its best!
           </p>
-        </div>
+        </motion.div>
       </motion.div>
     </motion.div>
   );
