@@ -11,10 +11,10 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
+      {/* <section id="Services">
         <Parallax type="services" />
-      </section>
-      <section>
+      </section> */}
+      <section id="Services">
         <Services />
       </section>
       <section id="About">About</section>
