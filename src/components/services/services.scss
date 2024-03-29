@@ -28,7 +28,6 @@
     }
   }
   .titleContainer {
-    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,9 +40,31 @@
   .listContainer {
     flex: 2;
     display: flex;
+    max-width: 1366px;
+    margin: auto;
 
     .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
       padding: 50px;
+
+      .icon {
+        display: flex;
+        font-size: 100px;
+        text-align: center;
+        color: #1f7a8c;
+      }
+
+      h2 {
+        font-size: 25px;
+      }
+
+      p {
+        line-height: 28px;
+      }
     }
   }
 }
