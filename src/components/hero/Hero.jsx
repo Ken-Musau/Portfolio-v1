@@ -22,6 +22,18 @@ const textVariants = {
   },
 };
 
+const imageVariants = {
+  initial: {
+    scale: 1,
+    opacity: 0,
+  },
+  animate: {
+    scale: 1,
+    opacity: 0.8,
+    transition: { duration: 3 },
+  },
+};
+
 const sliderVariants = {
   initial: {
     x: 0,
@@ -61,6 +73,15 @@ function Hero() {
             animate="scrollButton"
           />
         </motion.div>
+
+        <motion.div
+          variants={imageVariants}
+          initial="initial"
+          animate="animate"
+          className="imageContainer"
+        >
+          <motion.img variants={imageVariants} src="/passport.png" alt="" />
+        </motion.div>
       </div>
       <motion.div
         className="slidingTextContainer"
@@ -70,9 +91,6 @@ function Hero() {
       >
         K3nMusau - WebDev.
       </motion.div>
-      <div className="imageContainer">
-        <img src="/passport.png" alt="" />
-      </div>
     </div>
   );
 }
