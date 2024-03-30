@@ -15,7 +15,7 @@
     gap: 20px;
 
     p {
-      font-weight: 200;
+      font-weight: 400;
       font-size: 20px;
       color: gray;
       text-align: right;
@@ -37,6 +37,7 @@
       font-weight: 100;
     }
   }
+
   .listContainer {
     flex: 2;
     display: flex;
@@ -64,6 +65,7 @@
 
       p {
         line-height: 28px;
+        font-size: 18px;
       }
     }
   }

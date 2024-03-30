@@ -1,8 +1,9 @@
 import "./services.scss";
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
 import { FaLaptopCode } from "react-icons/fa";
 import { BsDatabaseCheck } from "react-icons/bs";
 import { GrVmMaintenance } from "react-icons/gr";
+import { useRef } from "react";
 
 const variants = {
   initial: {
@@ -20,13 +21,17 @@ const variants = {
 };
 
 function Services() {
+  const ref = useRef();
+  const isInView = useInView(ref, { margin: "-100px" });
   return (
     <motion.div
       className="services"
       variants={variants}
       initial="initial"
       // animate="animate"
-      whileInView="animate"
+      // whileInView="animate"
+      ref={ref}
+      animate={isInView && "animate"}
     >
       <motion.div className="textContainer" variants={variants}>
         <p>
@@ -48,7 +53,7 @@ function Services() {
             Crafting captivating and responsive user interfaces using HTML, CSS,
             JavaScript, React, Tailwind CSS, and Sass. From intuitive design to
             performance optimization, I deliver websites that excel across all
-            devices and browsers. Let's turn your vision into reality!
+            devices and browsers. Let&apos;s turn your vision into reality!
           </p>
         </motion.div>
 
@@ -59,7 +64,7 @@ function Services() {
             Specializing in building robust web applications using Ruby on Rails
             and Python with Flask. Crafting RESTful APIs, designing database
             schemas, or implementing complex business logic—I bring expertise to
-            every project. Let's turn your ideas into powerful backend
+            every project. Let&apos;s turn your ideas into powerful backend
             solutions!
           </p>
         </motion.div>
@@ -71,8 +76,8 @@ function Services() {
             Offering comprehensive maintenance and support services to keep your
             website secure, up-to-date, and performing optimally. From updates
             to security patches and troubleshooting, I handle all aspects of
-            maintaining your website. Let's collaborate to ensure your website
-            stays at its best!
+            maintaining your website. Let&apos;s collaborate to ensure your
+            website stays at its best!
           </p>
         </motion.div>
       </motion.div>
