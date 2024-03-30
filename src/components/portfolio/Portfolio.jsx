@@ -1,5 +1,6 @@
-import "./portfolio.sass";
-import { motion, useScroll } from "framer-motion";
+import { useRef } from "react";
+import "./portfolio.scss";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 const projects = [
   {
@@ -42,12 +43,22 @@ const ProjectCard = ({ project }) => {
 };
 
 function Portfolio() {
-  cons;
+  const ref = useRef();
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["end end", "start start"],
+  });
+
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+  });
   return (
     <div className="portfolio">
       <div className="progress">
         <h1>Featured Works</h1>
-        <div className="progressbar"></div>
+        <motion.div style={{ scaleX }} className="progressbar"></motion.div>
       </div>
       {projects.map((project) => (
         <ProjectCard key={project.id} project={project} />
