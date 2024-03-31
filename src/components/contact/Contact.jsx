@@ -3,7 +3,8 @@ import "./contact.scss";
 import { FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import emailjs from "@emailjs/browser";
 
 const contactVariant = {
   initial: {
@@ -22,7 +23,31 @@ const contactVariant = {
 
 function Contact() {
   const ref = useRef();
+  const formRef = useRef();
+  const [error, setError] = useState(false);
+  const [success, setSuccess] = useState(false);
+
   const isInView = useInView(ref, { margin: "-100px" });
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_jhve53l", "template_38uvypd", formRef.current, {
+        publicKey: "PYyvqYafIsq7OeNsW",
+      })
+      .then(
+        () => {
+          setSuccess(true);
+          // console.log("SUCCESS!");
+        },
+        (error) => {
+          // setError("FAILED...", error.text);
+          setError(true);
+        }
+      );
+  };
+
   return (
     <motion.div
       className="contact"
@@ -33,61 +58,54 @@ function Contact() {
     >
       <motion.div className="textContainer" variants={contactVariant}>
         <h1>Get in Touch</h1>
-        <div className="contact-method">
+        <motion.div className="contact-method" variants={contactVariant}>
           <h2>Mail</h2>
           <span>kennedy.musauu@gmail.com</span>
-        </div>
-        <div className="contact-method">
+        </motion.div>
+        <motion.div className="contact-method" variants={contactVariant}>
           <h2>Phone Number</h2>
           <span>+254 799 030 009</span>
-        </div>
+        </motion.div>
 
-        <div className="socials">
+        <motion.div className="socials" variants={contactVariant}>
           <div className="social">
-            <span>
-              <FaGithub />
-            </span>
             <a
               href="https://github.com/Ken-Musau"
               target="_blank"
               rel="noopener noreferrer"
             >
-              GitHub
+              <FaGithub />
             </a>
           </div>
           <div className="social">
-            <span>
-              <FaXTwitter />
-            </span>
             <a
               href="https://twitter.com/kenmusau_"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Twitter
+              <FaXTwitter />
             </a>
           </div>
           <div className="social">
-            <span>
-              <FaLinkedin />
-            </span>
             <a
               href="https://www.linkedin.com/in/kennedy-musau/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              LinkedIn
+              <FaLinkedin />
             </a>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
       <motion.div className="formContainer" variants={contactVariant}>
-        <form>
-          <input type="text" required placeholder="Name" />
-          <input type="email" required placeholder="Email" />
-          <textarea rows={8} placeholder="Write Your Message" />
+        <form ref={formRef} onSubmit={sendEmail}>
+          <input type="text" required placeholder="Name" name="name" />
+          <input type="email" required placeholder="Email" name="email" />
+          <textarea rows={8} placeholder="Write Your Message" name="message" />
 
           <button>Submit</button>
+          {error && "Error"}
+          {success && "Success"}
         </form>
       </motion.div>
     </motion.div>
