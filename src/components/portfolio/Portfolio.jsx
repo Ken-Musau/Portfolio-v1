@@ -102,7 +102,7 @@ function Portfolio() {
     damping: 30,
   });
   return (
-    <div className="portfolio">
+    <div className="portfolio" id="Portfolio">
       <div className="progress">
         <h1>Featured Works</h1>
         <motion.div style={{ scaleX }} className="progressbar"></motion.div>
