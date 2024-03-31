@@ -8,7 +8,7 @@ const projects = [
     title: "Lounge Web App",
     img: "/lounge.png",
     description:
-      "Lounge an online marketplace that connects space owners with individuals seeking unique venues for their meetings, events, or activities. This README provides an overview of the project and guides you on setting it up and running.",
+      "Lounge is an online marketplace that connects space owners with individuals seeking unique venues for their meetings, events, or activities.",
     live: "https://github.com/Ken-Musau/lounge-link-client",
     github: "https://github.com/Ken-Musau/lounge-link-client",
   },
@@ -27,7 +27,7 @@ const projects = [
     title: "Medical Appointment Planner",
     img: "/mediplan.png",
     description:
-      "Healthcare Appointment Management System project aims to create an efficient and user-friendly platform for managing appointments between patients and doctors. This web application will be developed using Ruby on Rails for the backend and React for the frontend, providing a seamless experience for both patients and healthcare professionals.",
+      "Healthcare Appointment Management System  aims to create an efficient and user-friendly platform for managing appointments between patients and doctors. This web application was be developed using Ruby on Rails for the backend and React for the frontend, providing a seamless experience for both patients and healthcare professionals.",
     live: "https://medi-plan-client.vercel.app/",
     github: "https://github.com/Ken-Musau/medi-plan-client",
   },
@@ -58,7 +58,7 @@ const ProjectCard = ({ project }) => {
     target: ref,
   });
 
-  const y = useTransform(scrollYProgress, [0, 1], [-300, 300]);
+  const y = useTransform(scrollYProgress, [0, 1], [-100, 0]);
 
   return (
     <section>
