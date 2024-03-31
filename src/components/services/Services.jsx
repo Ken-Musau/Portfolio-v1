@@ -25,6 +25,7 @@ function Services() {
   const isInView = useInView(ref, { margin: "-100px" });
   return (
     <motion.div
+      id="Services"
       className="services"
       variants={variants}
       initial="initial"

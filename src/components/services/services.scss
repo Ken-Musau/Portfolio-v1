@@ -8,6 +8,11 @@
   justify-content: space-between;
   overflow: hidden;
 
+  @include mobile {
+    padding-top: 30px;
+    gap: 30px;
+  }
+
   .textContainer {
     flex: 1;
     align-self: flex-end;
@@ -18,7 +23,6 @@
 
     @include mobile {
       align-self: center;
-      text-align: center;
       flex-direction: column;
     }
 
@@ -44,9 +48,19 @@
     justify-content: center;
     align-items: center;
 
+    @include mobile {
+      gap: 20px;
+      width: 100%;
+    }
+
     h1 {
       font-size: 96px;
       font-weight: 100;
+
+      @include mobile {
+        font-size: 50px;
+        text-align: center;
+      }
     }
   }
 
@@ -56,19 +70,35 @@
     max-width: 1366px;
     margin: auto;
 
+    gap: 75px;
+
+    @include mobile {
+      flex-direction: column;
+      width: 100%;
+      gap: 25px;
+    }
+
     .box {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       gap: 20px;
-      padding: 50px;
+
+      @include mobile {
+        gap: 30px;
+        padding-bottom: 25px;
+      }
 
       .icon {
         display: flex;
         font-size: 100px;
         text-align: center;
         color: #1f7a8c;
+
+        @include mobile {
+          font-size: 70px;
+        }
       }
 
       h2 {
@@ -78,6 +108,10 @@
       p {
         line-height: 28px;
         font-size: 18px;
+
+        @include mobile {
+          display: none;
+        }
       }
     }
   }
