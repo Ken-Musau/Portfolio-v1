@@ -1,3 +1,5 @@
+@import "../../app.scss";
+
 .navbar {
   height: 100px;
 
@@ -10,24 +12,34 @@
     justify-content: space-between;
     align-items: center;
 
-    .logo {
-      //   font-weight: bold;
-
-      font-size: 1.5em; /* Adjust the font size as needed */
-      font-weight: bold; /* Optionally, make the text bold */
-      color: #fff; /* Set the color of the text */
+    @include mobile {
+      font-size: 10px;
+      justify-content: center;
     }
 
-    .socials {
+    .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #fff;
+
+      @include mobile {
+        text-align: center;
+      }
+    }
+
+    .nav-links {
       display: flex;
       gap: 90px;
       align-items: center;
       font-weight: bold;
       font-size: 17px;
 
+      @include mobile {
+        display: none;
+      }
+
       a:hover {
         color: #a5c0df;
-        // font-weight: bold;
       }
     }
   }

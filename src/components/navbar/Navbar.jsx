@@ -19,7 +19,7 @@ function Navbar() {
         </motion.span>
 
         <div>
-          <Links classStyle="socials" />
+          <Links classStyle="nav-links" />
         </div>
       </div>
     </div>

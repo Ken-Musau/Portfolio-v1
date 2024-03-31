@@ -15,15 +15,15 @@ const App = () => {
         <Navbar />
         <Hero />
       </section>
-      <section id="Services">
+      {/* <section id="Services">
         <Services />
-      </section>
+      </section> */}
 
-      <Portfolio />
+      {/* <Portfolio /> */}
 
-      <section id="Contacts">
+      {/* <section id="Contacts">
         <Contact />
-      </section>
+      </section> */}
       {/* <section id="About">About</section> */}
     </div>
   );
