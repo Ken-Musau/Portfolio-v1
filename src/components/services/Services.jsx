@@ -7,7 +7,7 @@ import { useRef } from "react";
 
 const variants = {
   initial: {
-    y: 80,
+    y: 500,
     opacity: 0,
   },
   animate: {
@@ -28,8 +28,6 @@ function Services() {
       className="services"
       variants={variants}
       initial="initial"
-      // animate="animate"
-      // whileInView="animate"
       ref={ref}
       animate={isInView && "animate"}
     >
