@@ -4,6 +4,10 @@
   z-index: 1;
   position: relative;
 
+  @include mobile {
+    margin: 0 5px;
+  }
+
   .progress {
     position: sticky;
     top: 0;
@@ -12,13 +16,25 @@
     text-align: center;
     color: orange;
 
+    @include mobile {
+      padding-top: calc(100vh - 100px);
+    }
+
     h1 {
       font-size: 46px;
+      @include mobile {
+        font-size: 30px;
+      }
     }
 
     .progressbar {
       height: 10px;
       background-color: #fff;
+
+      @include mobile {
+        margin-top: 10px;
+        height: 8px;
+      }
     }
   }
 
@@ -41,9 +57,19 @@
       justify-content: center;
       gap: 50px;
 
+      @include mobile {
+        flex-direction: column;
+        gap: 20px;
+      }
+
       .imageContainer {
         flex: 1;
         height: 50%;
+
+        @include mobile {
+          width: 100%;
+          max-height: 300px;
+        }
 
         img {
           width: 100%;
@@ -51,6 +77,10 @@
           object-fit: cover;
           object-position: center top;
           border-radius: 8px;
+
+          @include mobile {
+            object-fit: contain;
+          }
         }
       }
 
@@ -60,13 +90,27 @@
         flex-direction: column;
         gap: 30px;
 
+        @include mobile {
+          transform: none !important;
+          text-align: center;
+          padding: 20px;
+        }
+
         h2 {
           font-size: 42px;
+
+          @include mobile {
+            font-size: 30px;
+          }
         }
 
         p {
           color: gray;
           font-size: 20px;
+
+          @include mobile {
+            font-size: 16px;
+          }
         }
 
         .project-links {
