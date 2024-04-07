@@ -26,6 +26,10 @@
       font-weight: bold;
       color: #fff;
 
+      @include tablet {
+        font-size: 3em;
+      }
+
       @include mobile {
         text-align: center;
       }
