@@ -1,13 +1,21 @@
 @import "../../app.scss";
 
 .sidebar {
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   background-color: #fff;
   color: #000;
+
+  @include desktop {
+    display: none;
+  }
+
+  @include mobile {
+    display: flex;
+  }
 
   .bg {
     position: fixed;

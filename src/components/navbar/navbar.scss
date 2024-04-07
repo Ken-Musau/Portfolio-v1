@@ -3,6 +3,10 @@
 .navbar {
   height: 100px;
 
+  @include desktop {
+    padding: 0 20px;
+  }
+
   .wrapper {
     max-width: 1366px;
     margin: auto;
@@ -32,7 +36,11 @@
       gap: 90px;
       align-items: center;
       font-weight: bold;
-      font-size: 17px;
+      font-size: 18px;
+
+      @include tablet {
+        display: none;
+      }
 
       @include mobile {
         display: none;
