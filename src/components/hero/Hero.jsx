@@ -61,10 +61,17 @@ function Hero() {
           <motion.h2 variants={textVariants}>Kennedy Musau</motion.h2>
           <motion.h1 variants={textVariants}>Web Developer</motion.h1>
           <motion.div variants={textVariants} className="buttons">
-            <motion.button variants={textVariants} className="btn draw-border">
+            <motion.a
+              href="#Portfolio"
+              variants={textVariants}
+              className="btn draw-border"
+            >
               See latest works
-            </motion.button>
-            <motion.button variants={textVariants}>Contact Me</motion.button>
+            </motion.a>
+            {/* <motion.button variants={textVariants}>Contact Me</motion.button> */}
+            <motion.a href="#Contacts" variants={textVariants}>
+              Contact Me
+            </motion.a>
           </motion.div>
           <motion.img
             src="/scroll.png"
