@@ -4,9 +4,7 @@
   z-index: 1;
   position: relative;
 
-  // @include mobile {
-  //   margin: 0 5px;
-  // }
+  margin: 0 20px;
 
   .progress {
     position: sticky;
@@ -16,7 +14,7 @@
     text-align: center;
     color: orange;
 
-    @include mobile {
+    @include tablet {
       padding-top: calc(100vh - 100px);
     }
 
@@ -57,7 +55,7 @@
       justify-content: center;
       gap: 50px;
 
-      @include mobile {
+      @include tablet {
         flex-direction: column;
         gap: 10px;
       }
@@ -78,7 +76,7 @@
           object-position: center top;
           border-radius: 8px;
 
-          @include mobile {
+          @include tablet {
             object-fit: contain;
           }
         }
@@ -90,7 +88,7 @@
         flex-direction: column;
         gap: 30px;
 
-        @include mobile {
+        @include tablet {
           transform: none !important;
           padding: 10px;
           align-items: center;
@@ -107,7 +105,7 @@
 
         p {
           color: gray;
-          font-size: 20px;
+          font-size: 22px;
 
           @include mobile {
             font-size: 16px;
