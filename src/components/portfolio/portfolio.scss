@@ -116,10 +116,17 @@
           display: flex;
           gap: 30px;
 
+          a{
+
+            cursor:'pointer'
+
+          }
+
           @include mobile {
             gap: 15px;
           }
         }
+        
 
         a:link,
         a:visited {
