@@ -2,7 +2,7 @@
 
 Contact: kennedy.musauu@gmail.com | +254 (799) 030 009  
 Location: Kenya  
-[GitHub](https://github.com/your-github-username) | [LinkedIn](https://www.linkedin.com/in/your-linkedin-profile)
+[GitHub](https://github.com/kenmusau) | [LinkedIn](https://www.linkedin.com/in/kennedy-musau)
 
 ## Projects
 
