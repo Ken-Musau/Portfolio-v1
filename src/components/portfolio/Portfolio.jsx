@@ -9,8 +9,8 @@ const projects = [
     img: "/lounge.png",
     description:
       "Lounge is an online marketplace that connects space owners with individuals seeking unique venues for their meetings, events, or activities.",
-    live: "https://github.com/Ken-Musau/lounge-link-client",
-    github: "https://github.com/Ken-Musau/lounge-link-client",
+    live: "https://github.com/kenmusau/lounge-link-client",
+    github: "https://github.com/kenmusau/lounge-link-client",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const projects = [
     description:
       "Feasty is an online platform that allows users to discover food from various restaurants. This project provides a frontend interface built with React.js to browse restaurants and their available meals, apply filters, and sort meals alphabetically.",
     live: "https://kenmusau-foodmenu.vercel.app/",
-    github: "https://github.com/Ken-Musau/KennedyMusau-Frontend-Developer",
+    github: "https://github.com/kenmusau/KennedyMusau-Frontend-Developer",
   },
 
   {
@@ -29,7 +29,7 @@ const projects = [
     description:
       "Healthcare Appointment Management System  aims to create an efficient and user-friendly platform for managing appointments between patients and doctors. This web application was be developed using Ruby on Rails for the backend and React for the frontend, providing a seamless experience for both patients and healthcare professionals.",
     live: "https://medi-plan-client.vercel.app/",
-    github: "https://github.com/Ken-Musau/medi-plan-client",
+    github: "https://github.com/kenmusau/medi-plan-client",
   },
   {
     id: 4,
@@ -37,8 +37,8 @@ const projects = [
     img: "/moviefinder.png",
     description:
       "Movie Finder is a web application that allows users to search for movies by title. The application uses the OMDb API to retrieve movie information, including title, year, plot, and poster.",
-    live: "https://ken-musau.github.io/Movie-Finder/",
-    github: "https://github.com/Ken-Musau/Movie-Finder",
+    live: "https://kenmusau.github.io/Movie-Finder/",
+    github: "https://github.com/kenmusau/Movie-Finder",
   },
   {
     id: 5,
