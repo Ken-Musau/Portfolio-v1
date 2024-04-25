@@ -9,7 +9,7 @@ const projects = [
     img: "/lounge.png",
     description:
       "Lounge is an online marketplace that connects space owners with individuals seeking unique venues for their meetings, events, or activities.",
-    live: "https://github.com/kenmusau/lounge-link-client",
+    live: "https://lounge-zeta.vercel.app/",
     github: "https://github.com/kenmusau/lounge-link-client",
   },
   {
