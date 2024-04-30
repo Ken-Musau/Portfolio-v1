@@ -70,7 +70,7 @@ function Contact() {
         <motion.div className="socials" variants={contactVariant}>
           <div className="social">
             <a
-              href="https://github.com/Ken-Musau"
+              href="https://github.com/kenmusau"
               target="_blank"
               rel="noopener noreferrer"
             >
